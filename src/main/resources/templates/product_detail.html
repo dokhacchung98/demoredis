@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Product</title>
+</head>
+<body>
+<center>
+    <h1>Product Detail</h1>
+    <br/><br/>
+    <img th:src="${productDetail.getThumbnail()}" style="width: 500px; height: 300px;"/>
+    <br/>
+    <br/>
+    <span th:text="${productDetail.getName()}" style="font-size: 32px; font-weight: bold"/>
+    <br/>
+    <br/>
+    <span th:text="${typeGet.toString()}"/>
+    <br/>
+    <br/>
+    <span th:text="${productDetail.getPrice()}" style="color: #ff0000; font-size: 32px; "/>
+    <br/>
+    <br/>
+    <span th:text="${productDetail.getDescription()}" />
+    <br/>
+</center>
+</body>
+</html>
